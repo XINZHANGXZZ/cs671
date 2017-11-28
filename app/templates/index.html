@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full Slider - Start Bootstrap Template</title>
+    <!-- <meta charset="utf-8"> -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/full-slider.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Storyteller</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('index')}}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('upload')}}">upload</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol> -->
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('../static/2.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('../static/1.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('../static/3.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+
+    <section class="py-5">       
+    <div class="container">
+    <h1>A selection of generated stories</h1>
+    <div class="row"> 
+      <div class="column">
+
+        <div class="mycontainer">
+          <img id="myImg0" src="../static/images/ex1.jpg" title="A surfer is silhouetted against a sunset at the beach" alt="We were barely able to catch the breeze at the beach , and it felt as if someone stepped out of my mind . She was in love with him for the first time in months , so she had no intention of escaping . The sun had risen from the ocean , making her feel more alive than normal . She 's beautiful , but the truth is that I do n't know what to do . The sun was just starting to fade away , leaving people scattered around the Atlantic Ocean . I d seen the men in his life , who guided me at the beach once more ." style="width:100%" onclick="myopenModel(0)">
+          <div class="content">
+            <h7>A surfer is silhouetted against a sunset at the beach</h7>
+          </div>
+        </div>
+
+        <div class="mycontainer">
+          <img id="myImg1" src="../static/images/ex2.jpg" title="An image of a large bouquet of flowers" alt="She had the bouquet of purple roses , and I bit down on my fingers . To be honest , I did n't know what to say to her . In fact , it was as if they were living in a vase full of flowers . The only thing I wanted to do was keep an eye on James , and he kept looking at me with wide eyes that reminded me so much of her . It had been a long time since she arrived in New York City , and I was relieved to see the new colors . ' She stood up , afraid of the vase and mixed blood ." style="width:100%" onclick="myopenModel(1)">
+          <div class="content">
+              <h7>An image of a large bouquet of flowers</h7>
+          </div>
+        </div>
+
+        <div class="mycontainer">
+          <img id="myImg2" src="../static/images/ex3.jpg" title="The meal looks delicious but is an unhealthy mean" alt="I tasted of food and , for a brief moment , I set the tray on the table . There was no need to argue with me . By the time we were finished eating , it would be the most delicious meal I 'd ever seen in my entire life . I forced myself to sit up and let her know that he was carrying a tray of food . In fact , it seemed as if she had no idea what to do with him . She took a deep breath and tried not to wince , but as usual , it was gone . Especially since Dean and I had the recipe of meat soup and I wanted more ." style="width:100%" onclick="myopenModel(2)">
+          <div class="content">
+              <h7>The meal looks delicious but is an unhealthy mean</h7>
+          </div>
+        </div>
+
+        <div class="mycontainer">
+          <img id="myImg3" src="../static/images/ex4.jpg" title="Two tall giraffes standing next to each other in a dessert like area" alt="Two I stood with each other , moving closer to the next . I had to wonder just how long they were in my head , and that was the most natural thing in the world . Of course , I could n't bear to be comfortable with her , not yet . I let out a little growl as he kissed the back of my neck . There was no reason for him to withdraw from each other , and Emmie 's pet . Like the one who would remain silent , it seemed that I had no problem moving around to their next time ." style="width:100%" onclick="myopenModel(3)">
+          <div class="content">
+              <h7>Two tall giraffes standing next to each other in a dessert like area</h7>
+          </div>
+        </div>
+
+        <div class="mycontainer">
+          <img id="myImg4" src="../static/images/ex5.jpg" title="A truck with heavy dark smoke bellowing from its hood stack" alt="My truck was in the back of the vehicle , and I pulled it out of my head . For a brief moment , I had no idea what to say . In fact , it had become more difficult to deal with . By the time I closed the car doors , I could n't help but notice that he was looking at her as if he wanted to keep her safe . My body was burning with fire , and it gave me a strange sense of satisfaction . She spent the past twenty-four hours , that Colt 's truck had nothing to do with it ." style="width:100%" onclick="myopenModel(4)">
+          <div class="content">
+              <h7>A truck with heavy dark smoke bellowing from its hood stack</h7>
+          </div>
+        </div>
+
+        <img id="myImg4" src="../static/images/ex5.jpg" alt="Trolltunga, Norway" style="width:100%" onclick="myopenModel(4)">
+        <img id="myImg5" src="../static/images/ex10.jpg" alt="Trolltunga, Norway" style="width:100%" onclick="myopenModel(5)">
+      </div>
+      <div class="column">
+        <img id="myImg6" src="../static/images/ex6.jpg" style="width:100%" onclick="myopenModel(6)">
+        <img id="myImg7" src="../static/images/ex7.jpg" style="width:100%" onclick="myopenModel(7)">
+        <img id="myImg8" src="../static/images/ex8.jpg" style="width:100%" onclick="myopenModel(8)">
+        <img id="myImg9" src="../static/images/ex9.jpg" style="width:100%" onclick="myopenModel(9)">
+        <img id="myImg10" src="../static/images/ex10.jpg" style="width:100%" onclick="myopenModel(10)">
+
+        <div class="mycontainer">
+          <img id="myImg11" src="../static/images/ex11.jpg" title="A view of the sunset on the ocean" alt="I dreamed of the darkening sky , taking in a brief moment as the sun rose above the horizon . I had never expected anyone to be so close to me , but it was more than anything else . As soon as the sun had risen , he released my hand and pulled it out of his pocket . In the distance , I could tell she was still alive , and I had no intention of letting her go . That 's the most beautiful thing I 've ever seen in my entire life . She seemed to enjoy the sunset , which sent waves crashing down on the sand at night ." style="width:100%" onclick="myopenModel(11)">
+          <div class="content">
+              <h7>A view of the sunset on the ocean</h7>
+          </div>
+        </div>
+      </div>  
+      <div class="column">
+        <div class="mycontainer">
+          <img id="myImg12" src="../static/images/ex12.jpg" title="a small boat out in the water with a people sitting inside it" alt="I had a anchor in the boat , knowing it was all going to happen to me as soon as we were out of the water . When I opened my eyes , he let out a small sigh and looked back at her . I mean , I understand that it 's the only thing that will ever happen to her , but I don t understand why . I had no idea what was going on in his life . For the first time in months , I felt like a fish at the shore of San Francisco Bay . It was much more suited to him than the sailors , and I could pull it in on shore ." style="width:100%" onclick="myopenModel(12)">
+          <div class="content">
+              <h7>An image of a large bouquet of flowers</h7>
+          </div>
+        </div>
+
+        <img id="myImg13" src="../static/images/ex13.jpg" style="width:100%" onclick="myopenModel(13)">
+        <img id="myImg14" src="../static/images/ex10.jpg" style="width:100%" onclick="myopenModel(14)">
+        <img id="myImg15" src="../static/images/ex10.jpg" style="width:100%" onclick="myopenModel(15)">
+        <img id="myImg16" src="../static/images/ex10.jpg" style="width:100%" onclick="myopenModel(16)">
+        <img id="myImg17" src="../static/images/ex10.jpg" style="width:100%" onclick="myopenModel(17)">
+        <img id="myImg18" src="../static/images/ex10.jpg" style="width:100%" onclick="myopenModel(18)">
+      </div>
+    </div>
+    </div>
+      <!-- <img id="myImg" src="./images/ex1.jpg" alt="Trolltunga, Norway" width="300" height="200"> -->
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal" onclick="mycloseModel()">
+        <!-- <span class="close">&times;</span> -->
+        <div id="mycontainer2">
+          <div id="myphoto">
+            <img class="modal-content" id="img01">
+          </div>
+          <div id="mycontent">
+            <div id="caption"></div>
+            <div id="description"></div>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/Javascript">
+
+      function myopenModel(n){
+        // alert("hello!!")
+        document.getElementById('myModal').style.display = "block";
+        document.getElementById("img01").src = document.getElementById('myImg'+n).src;
+        document.getElementById("caption").innerHTML = document.getElementById('myImg'+n).title;
+        document.getElementById("description").innerHTML = document.getElementById('myImg'+n).alt;
+      }
+      // // Get the modal
+      // var modal = document.getElementById('myModal');
+
+      // // Get the image and insert it inside the modal - use its "alt" text as a caption
+      // var img = document.getElementById('myImg');
+      // var modalImg = document.getElementById("img01");
+      // var captionText = document.getElementById("caption");
+      // img.onclick = function(){
+      //     modal.style.display = "block";
+      //     modalImg.src = this.src;
+      //     captionText.innerHTML = this.alt;
+      // }
+
+      function mycloseModel(){
+        // alert("hello!!")
+        document.getElementById('myModal').style.display = "none";
+        // document.getElementById("img01").src = document.getElementById('myImg').src;
+        // document.getElementById("caption").innerHTML = document.getElementById('myImg').alt;
+      }
+
+      // modalImg.onclick = function(){
+      //   modal.style.display = "none";
+      // }
+    </script>
+  </section>
+
+  <!-- ................. -->
+  <!-- ................. -->
+
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
