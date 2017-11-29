@@ -47,8 +47,8 @@
 
 /* Caption of Modal Image */
 #caption {
-	font-size: 22px;
-	font-weight:normal;
+    font-size: 22px;
+    font-weight:normal;
     margin: auto;
     display: block;
     width: 100%;
@@ -60,14 +60,14 @@
 }
 
 #description {
-	/*margin: 0;*/
-	/*padding: 0;*/
-	line-height: 2em;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    line-height: 2em;
     font-family: "Times New Roman", Times, serif;
-	font-size: 17px;
+    font-size: 17px;
     /*color: #000000;*/
-	/*background: #f2e7ca url(images/templatemo_body.jpg) top center no-repeat;*/
-	/*font-family: "Times New Roman", Times, serif;*/
+    /*background: #f2e7ca url(images/templatemo_body.jpg) top center no-repeat;*/
+    /*font-family: "Times New Roman", Times, serif;*/
     margin: auto;
     display: block;
     width: 100%;
@@ -148,7 +148,7 @@ body {
 
 /* Clear floats after the columns */
 .row:after {
-	margin: auto;
+    margin: auto;
     content: "";
     display: table;
     clear: both;
@@ -172,20 +172,20 @@ body {
 }
 
 #mycontainer2 {
-	width: 90%;
-	/*position: center;*/
-	/*margin-left: 10px;*/
-	/*text-align: center;*/
+    width: 90%;
+    /*position: center;*/
+    /*margin-left: 10px;*/
+    /*text-align: center;*/
 }
 #myphoto {
-	float: left; 
-	width: 70%;
+    float: left; 
+    width: 70%;
 }
 #mycontent {
-	/*padding-left: 1px;*/
-	float: right; 
-	width: 30%;
-	/*margin-left: 1px;*/
+    /*padding-left: 1px;*/
+    float: right; 
+    width: 30%;
+    /*margin-left: 1px;*/
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

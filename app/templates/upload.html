@@ -16,10 +16,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="../static/css/full-slider.css" rel="stylesheet">
+    <link href="../static/css/full-slider.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -33,13 +33,16 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="{{ url_for('index')}}">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('upload')}}">Upload</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('upload')}}">upload</a>
+              <a class="nav-link" href="{{ url_for('load')}}">Load</a>
             </li>
           </ul>
         </div>
@@ -48,34 +51,35 @@
 
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
+        <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol> -->
+        </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('../static/2.jpg')">
+          <div class="carousel-item active" style="background-image: url('../static/images/first.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <!-- <h3>First Slide</h3> -->
+              <h3>A cruise ship is traveling in the distance</h3>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('../static/1.jpg')">
+          <div class="carousel-item" style="background-image: url('../static/images/Football.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+              <!-- <h3>Second Slide</h3> -->
+              <h3>Children chase the ball during a game of soccer</h3>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('../static/3.jpg')">
+          <div class="carousel-item" style="background-image: url('../static/images/bear.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+              <!-- <h3>Third Slide</h3> -->
+              <h3>A big brown bear turns its face toward the distance</h3>
             </div>
           </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -89,11 +93,43 @@
 
     <section class="py-5">       
 	    <div class="container">
-	    	<h1>Upload file</h1>
+	    	<h2>Upload file</h2>
+      <!--   <a href="/exec">upload</a>
+        <button>submit</button>
+        <p>nigeiwogun</p> -->
+
+        <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
+          Select image to upload:
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <input type="submit" value="upload" name="submit">
+        </form> -->
+
+        <form method="POST" enctype=multipart/form-data action="{{url_for('upload')}}">
+          <input type="file" name="photo">
+          <br>
+          <input type="submit">
+        </form>
+        <br>
+        <img src="{{ user_image }}" alt="User Image">
+        <br></br>
+        <h3>Title</h3>{{ title }}
+        <br></br>
+        <h3>Description</h3>{{ description }}
 	    </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
   </body>
 
 </html>
